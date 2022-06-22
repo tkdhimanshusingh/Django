@@ -6,7 +6,7 @@ def index(request):
         "variable1":"Himanshu is Great",
         "variable2":"Harry is Great"
     }
-    return render(request,'index.html')
+    return render(request,'index.html',context)
 def about(request):
     return render(request,'about.html')
     #return HttpResponse("This is about page")
